@@ -18,5 +18,11 @@ namespace API.Models
         public bool IsUsed { get; set; }
         [Column("is_active")]
         public bool IsActive { get; set; }
+
+        //cardinality
+        public Employee? Employee { get; set; }
+        public ICollection<AccountRole>? AccountRoles { get; set; }
+        public ICollection<OvertimeRequest>? OvertimeRequests { get; set; }
+
     }
 }

@@ -22,5 +22,8 @@ namespace API.Models
 
         [Column("document", TypeName = "varchar(255)")]
         public string Document { get; set; } = string.Empty;
+        //cardinality
+        public ICollection<OvertimeRequest>? OvertimeRequests { get; set; }
+
     }
 }

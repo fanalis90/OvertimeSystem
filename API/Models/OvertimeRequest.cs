@@ -20,5 +20,8 @@ namespace API.Models
 
         [Column("comment", TypeName = "varchar(255)")]
         public string? Comment { get; set; }
+        //cardinality
+        public Overtime? Overtime { get; set; }
+        public Account? Account { get; set; }
     }
 }
