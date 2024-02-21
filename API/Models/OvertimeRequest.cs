@@ -15,7 +15,7 @@ namespace API.Models
         public Guid OvertimeId { get; set; }
         [Column("time_stamp")]
         public DateTime TimeStamp { get; set; }
-        [Column("id", TypeName = "varchar(20)")]
+        [Column("status", TypeName = "varchar(20)")]
         public string Status { get; set; } = string.Empty;
 
         [Column("comment", TypeName = "varchar(255)")]

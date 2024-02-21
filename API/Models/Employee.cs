@@ -12,7 +12,7 @@ namespace API.Models
         public string NIK { get; set; } = string.Empty;
         [Column("first_name", TypeName = "varchar(50)")]
         public string FristName { get; set; } = string.Empty;
-        [Column("id", TypeName = "varchar(50)")]
+        [Column("last_name", TypeName = "varchar(50)")]
         public string? LastName { get; set; }
         [Column("salary")]
         public int Salary { get; set; }
